@@ -1,3 +1,4 @@
+
 top50AnimeURL = 'https://api.jikan.moe/v3/top/anime'; 
 allAnimeRecentlyReleasedURL = 'https://api.jikan.moe/v3/search/anime?q=&page=1&genre=1,10&order_by=start_date&sort=desc';
 
@@ -52,4 +53,9 @@ function showAnime(anime) {
 //             document.body.append(top50anime)
 //         })
 //     })
+
+
+baseURL = "https://api.jikan.moe/v3/anime/"
+
+fetch(baseURL)
 
