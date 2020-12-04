@@ -1,23 +1,54 @@
 .background {
     width: 100%;
     height: 100vh;
-    background-image:url(images/background2.png);
+    background-image:url(images/backgroun.png);
     background-color: #bbbd;
     background-size: cover;
     background-position:  center;
     position: relative;
     overflow: hidden;
 }
-.background2 {
-    width: 100%;
-    height: 100vh;
-    background-image:url(images/cback.png);
-    background-color: #bbbd;
-    background-size: cover;
-    background-position:  center;
-    position: relative;
-    overflow: hidden;
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index:1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+
 }
+
+
+.modal-content {
+    
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+
+}
+.close {
+    color: hsl(225, 92%, 50%);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 html {
     scroll-behavior: smooth;
@@ -59,6 +90,12 @@ button {
 
 small{
     color:;
+}
+h1 { 
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+    color: blueviolet;
 }
 
 .ph1 { 
@@ -154,4 +191,38 @@ small{
 }
 .bubbles img:nth-child(7){
     animation-delay: 7s;
+}
+
+.background2 {
+    height: 100%;
+    background-image:url(images/cbac.png);
+    background-color: #bbbd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center;
+    position: relative;
+  
+}
+h1 {
+    text-align:center;
+}
+.cardR {
+    width: fit-content;
+    box-shadow: 10px 5px 5px red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: row;
+    flex-shrink: 2;
+}
+.cardR > h3 {
+    height: 30%;
+    font-weight: 600;
+    margin-left: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+ 
+.card > img {
+    height: 20%;
+    width: 30%;
 }
