@@ -8,7 +8,20 @@
     position: relative;
     overflow: hidden;
 }
+.background2 {
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/cback.png);
+    background-color: #bbbd;
+    background-size: cover;
+    background-position:  center;
+    position: relative;
+    overflow: hidden;
+}
 
+html {
+    scroll-behavior: smooth;
+}
 .logo {
     width: 100px;
     cursor: pointer;
@@ -31,6 +44,7 @@ button {
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+    justify-content: column;
 }
 
 .content {
@@ -47,7 +61,7 @@ small{
     color:;
 }
 
-h1 { 
+.ph1 { 
     font-size: 80px;
     margin: 10px 0 30px;
     line-height: 80px;
@@ -90,8 +104,9 @@ h1 {
 }
 
 .bubbles img{
-    width: 50px;
+    width: 70px;
     animation: bubble 7s linear infinite;
+    background: transparent;
 }
 .bubbles{
     width: 100%;
