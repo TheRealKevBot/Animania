@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>! Sign Up !</title>
+        <script defer src="sign-up.js"></script>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h1>! ANIMANIA !</h1>
+        <h2>Welcome to the sign up page !</h2>
+        <h3>We just need some information from you so we can get your personal account set up!</h3>
+        <form method="POST" action="http://localhost:3000/users">
+            <label for="first_name">First name:</label>
+            <input id='first_name' name='first_name' type="text" placeholder=" Here !">
+            
+            <label for="last_name">Last name:</label>
+            <input id='last_name' name='last_name' type="text" placeholder=" Here !">
+            
+            <label for="user_name">Username:</label>
+            <input id='user_name' name='user_name' type="text" placeholder=" Here !">
+            
+            <label for="passphrase">Password:</label>
+            <input id='passphrase' name='passphrase' type="text" placeholder=" Here !">
+            
+            <label for="favorite_id">Favoritest:</label>
+            <select name="favorite_id" id="favorite_id">
+        
+            </select>
+            <input type="submit" value='Register'>
+        </form>
+    </body>
+</html>
