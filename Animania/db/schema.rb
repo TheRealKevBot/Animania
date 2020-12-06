@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2020_12_03_213333) do
     t.string "last_name"
     t.string "user_name"
     t.string "passphrase"
-    t.integer "favorite_id", null: false
+    t.integer "favorite_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["favorite_id"], name: "index_users_on_favorite_id"

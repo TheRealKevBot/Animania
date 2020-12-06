@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :last_name
       t.string :user_name
       t.string :passphrase
-      t.references :favorite, null: false, foreign_key: true
+      t.references :favorite, null: true, foreign_key: true
 
       t.timestamps
     end
