@@ -1,7 +1,7 @@
 .background {
     width: 100%;
     height: 100vh;
-    background-image:url(images/backgroun.png);
+    background-image:url(images/background2.png);
     background-color: #bbbd;
     background-size: cover;
     background-position:  center;
@@ -195,7 +195,7 @@ h1 {
 
 .background2 {
     height: 100%;
-    background-image:url(images/cbac.png);
+    background-image:url(images/cba.png);
     background-color: #bbbd;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,23 +206,33 @@ h1 {
 h1 {
     text-align:center;
 }
+.cards {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 3rem;
+
+}
 .cardR {
     width: fit-content;
     box-shadow: 10px 5px 5px red;
+    margin: 3rem;
     display: flex;
-    flex-direction: column;
-    flex-wrap: row;
-    flex-shrink: 2;
+    flex-direction: column; 
 }
+
 .cardR > h3 {
     height: 30%;
     font-weight: 600;
-    margin-left: 0.7rem;
-    margin-top: 0.5rem;
+
+    
 }
 
  
 .card > img {
     height: 20%;
     width: 30%;
+    top: auto;
 }
