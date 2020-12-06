@@ -9,9 +9,10 @@
     </head>
     <body>
         <h1>! ANIMANIA !</h1>
-        <h2>Welcome to the sign up page !</h2>
-        <h3>We just need some information from you so we can get your personal account set up!</h3>
-        <form method="POST" action="http://localhost:3000/users">
+        <h2>Welcome to the Club!!</h2>
+        <p>If you are new here please sign up for an account below. Once you sign up you will have your very own personal account where you can store all of your favorite anime under!</p>
+        <p> 
+            <form method="POST" action="http://localhost:3000/users">
             <label for="first_name">First name:</label>
             <input id='first_name' name='first_name' type="text" placeholder=" Here !">
             
@@ -22,13 +23,15 @@
             <input id='user_name' name='user_name' type="text" placeholder=" Here !">
             
             <label for="passphrase">Password:</label>
-            <input id='passphrase' name='passphrase' type="text" placeholder=" Here !">
+            <input id='passphrase' name='passphrase' type="password" placeholder=" Here !">
+
+            <label for="age">+18?</label>
+            <input type='checkbox' name="age">
             
-            <label for="favorite_id">Favoritest:</label>
-            <select name="favorite_id" id="favorite_id">
-        
-            </select>
             <input type="submit" value='Register'>
         </form>
+        <p>
+            Made by Javaria Brascom and Kevin Glasgow
+        </p>
     </body>
-</html>
+</html> 

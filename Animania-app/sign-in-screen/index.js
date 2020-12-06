@@ -54,6 +54,8 @@ function showAnime(anime) {
         }
       }
 
+      weapon 
+
 
 // fetch(top50AnimeURL)
 //     .then(response => response.json())

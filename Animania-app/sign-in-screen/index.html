@@ -10,20 +10,37 @@
     <body>
         <div class="background">
             <div class="searchBar">
-                <img src="images/Aclub.png" class="logo">
+                <a href="sign-up.html">
+                    <img src="images/Aclub.png" class="logo">
+                </a>
                 <button id="btn" class="signbut" type="button">Sign Up</button>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
+                        <h2>Welcome to the site Friend!</h2>
+                        <h3>Please sign in with your username and password <br> For our new users please select the "Anime Club" button below for more informaiton</h3>
                         <p> 
-                            hi
+                          
+                            <form method="POST" action="http://localhost:3000/users">
+                                <label for="user_name">Username:</label>
+                                <input id='user_name' name='user_name' type="text" placeholder=" Here !">
+                                
+                                <label for="passphrase">Password:</label>
+                                <input id='passphrase' name='passphrase' type="password" placeholder=" Here !">
+                    
+                                <input type="submit" value='Sign in'>
+                            </form>
+                            ------------------------------------------------------------------------------------------------------------------------------------------------
+                            <a href="sign-up.html">
+                                <img src="images/Aclub.png" class="logo">
+                            </a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="content">
                 <small> </small>
-            <h1 class="ph1">Welcome to Animania  <br> Get ready to Geek Out</h1>
+            <h1 class="ph1">Welcome to Animania  <br> Ready to stay on the couch?</h1>
             <button type="button">View My Favorites</button>
             </div>
             <div class="side-bar">
