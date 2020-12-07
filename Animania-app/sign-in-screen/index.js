@@ -1,6 +1,6 @@
 top50AnimeURL = 'https://api.jikan.moe/v3/top/anime'; 
 allAnimeRecentlyReleasedURL = 'https://api.jikan.moe/v3/search/anime?q=&page=1&genre=1,10&order_by=start_date&sort=desc';
-
+userURL = "http://localhost:3000/users"
 const top50anime = document.querySelector('section')
 
 const signIn = document.getElementById('btn')
@@ -10,7 +10,7 @@ const closer = document.getElementsByClassName('close')[0]
 
 
 fetch(top50AnimeURL)
-    .then(response => response.json())
+    .then(parseJSON
     .then(displayTop50);
 
 function displayTop50(animes) {
@@ -54,7 +54,16 @@ function showAnime(anime) {
         }
       }
 
-      weapon 
+    fetch(userURL)
+      .then(response => response.json)
+      .then (accessUsers);
+
+
+  
+
+     function  parseJSON(response) {
+       return response.json();
+     }
 
 
 // fetch(top50AnimeURL)
