@@ -196,8 +196,7 @@ h1 {
 
 .background2 {
     height: 100%;
-    background-image:url(images/cba.png);
-    background-color: rgba(26, 53, 91, 0.867);
+    background-color: rgba(97, 135, 189, 0.867);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:  center;
@@ -209,15 +208,7 @@ h1 {
 
 }
 
-.secondp {
-    text-align: left;
-    color: rgb(0,0,0);
-    font-size: 30px;
-    position: relative;   
-    top: 70px; 
-    margin: 3rem;
 
-}
 .cards {
     display: flex;
     /* flex-direction: column; */
@@ -256,4 +247,16 @@ h1 {
     margin-right: 20px;
     float: right;
     position: relative;
+}
+
+
+/* 
+.secondh {
+    text-align: left;
+    color: rgb(0,0,0);
+    font-size: 30px;
+    position: relative;   
+    top: 70px; 
+    margin: 3rem; */
+
 }

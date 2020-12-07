@@ -1,7 +1,7 @@
 top50AnimeURL = 'https://api.jikan.moe/v3/top/anime'; 
 allAnimeRecentlyReleasedURL = 'https://api.jikan.moe/v3/search/anime?q=&page=1&genre=1,10&order_by=start_date&sort=desc';
 userURL = "http://localhost:3000/users"
-const top50anime = document.querySelector('section')
+const top50anime = document.querySelector('.background2')
 const sideCard = document.querySelector('side-bar2')
 
 
@@ -20,22 +20,37 @@ function displayTop50(animes) {
 }
 
 function showAnime(anime) {
-   const animeCard = createAnimeCard();
+   const animeCard = createAnimeCard(anime);
    const name = createAnimeName(anime);
    const ranking = createAnimeRanking(anime);
    const cover = createImage(anime);
-   const  synopsis = createAnimeSynop(anime);
+   const synop = createAnimeSynop(anime);
 
     
-    animeCard.append(ranking, name, cover)
+    animeCard.append(ranking, name, cover, synop)
     top50anime.append(animeCard)
-    sideCard.append(synopsis)
+    // sideCard.append(synopsis)
     // document.body.append(top50anime)
 } 
 
-function createAnimeCard() { 
-  const animeCard=  document.createElement('div');
+function createAnimeCard (anime) { 
+  const animeCard =  document.createElement('div');
   animeCard.classList.add("cardR");
+
+  animeCard.addEventListener('click', () => {
+    console.log('this is me', anime)
+
+    const selecttedAnimeImage = document.querySelector('.side-bar2 > img')
+    selecttedAnimeImage.src = anime.image_url;
+    selecttedAnimeImage.alt = anime.name;
+
+    const selectedAnimeName = document.querySelector('.side-bar2 > h1')
+    selectedAnimeName.textContent= anime.title;
+
+    const selectedAnimeSynop = document.querySelector('.side-bar2 > p')
+    selectedAnimeSynop.textContent = anime.synopsis 
+
+  })
   return animeCard;
 } 
 
@@ -58,12 +73,13 @@ function createImage({image_url, title}) {
     
 }
 
-function createAnimeSynop ({synopsis}) {
+function createAnimeSynop ({ synopsis }) {
   const synop = document.createElement('p');
   synop.classList.add('synopsis');
   synop.textContent = synopsis;
   return synop
 }
+
 
     // When the user clicks on the button, open the modal
     signIn.onclick = function() {
