@@ -1,3 +1,5 @@
+allAnimeRecentlyReleasedURL = 'https://api.jikan.moe/v3/search/anime?q=&page=1&genre=1,10&order_by=start_date&sort=desc';
+userURL = "http://localhost:3000/users"
 top50AnimeURL = 'http://localhost:3000/top50animes'; 
 top50AnimeuserURL = 'http://localhost:3000/top50animesuser'; 
 animeURL = 'http://localhost:3000/animes'; 
@@ -40,16 +42,31 @@ signIn.onclick = function() {modal.style.display = "block";}
 // When the user clicks on <span> (x), close the modal
 closer.onclick = function() {modal.style.display = "none";}
       
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+    fetch(userURL)
+      .then(response => response.json)
+      .then (accessUsers);
+
+
+  
+
+     function  parseJSON(response) {
+       return response.json();
+     }
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-
-
-
-
 
 
 
