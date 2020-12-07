@@ -20,7 +20,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
+    z-index: 90;
 
 }
 
@@ -32,6 +32,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  z-index: 50;
 
 }
 .close {
@@ -69,7 +70,7 @@ html {
 
 button { 
     color: #fbfcfd;
-    padding; 10px 25px;
+    padding: 10px 25px;
     background: transparent;
     border: 1px solid #fff;
     border-radius: 20px;
@@ -88,9 +89,8 @@ button {
 
 }
 
-small{
-    color:;
-}
+small
+
 h1 { 
     font-size: 80px;
     margin: 10px 0 30px;
@@ -103,6 +103,7 @@ h1 {
     margin: 10px 0 30px;
     line-height: 80px;
     color: blueviolet;
+    z-index: 2;
 }
 .side-bar {
     width: 50px;
@@ -177,7 +178,7 @@ h1 {
     animation-delay: 2s;
 }
 .bubbles img:nth-child(2){
-    width;
+    
     animation-delay: 1s;
 }
 .bubbles img:nth-child(3){
