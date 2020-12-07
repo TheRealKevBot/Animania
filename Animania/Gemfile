@@ -45,4 +45,5 @@ gem 'jikan.rb'
 
 gem "json", "~> 2.3"
 
+#Use rest client for http request
 gem "rest-client", "~> 2.1"

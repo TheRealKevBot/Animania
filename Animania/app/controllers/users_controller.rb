@@ -21,8 +21,10 @@ class UsersController < ApplicationController
             favorite_id: params[:favorite_id]
         )
 
+        byebug
+
         render json: @newUser
-        #  redirect_to 'http://localhost:3001/'
+        # redirect_to 'http://localhost:3001/'
     end 
     
 end
