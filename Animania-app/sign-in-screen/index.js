@@ -1,20 +1,18 @@
-top50AnimeURL = 'https://api.jikan.moe/v3/top/anime'; 
-allAnimeRecentlyReleasedURL = 'https://api.jikan.moe/v3/search/anime?q=&page=1&genre=1,10&order_by=start_date&sort=desc';
+top50AnimeURL = 'http://localhost:3000/top50animes'; 
+top50AnimeuserURL = 'http://localhost:3000/top50animesuser'; 
+animeURL = 'http://localhost:3000/animes'; 
 
 const top50anime = document.querySelector('section')
-
 const signIn = document.getElementById('btn')
 const modal = document.getElementById('myModal')
 const closer = document.getElementsByClassName('close')[0]
-
-
 
 fetch(top50AnimeURL)
     .then(response => response.json())
     .then(displayTop50);
 
 function displayTop50(animes) {
-    animes.top.forEach(showAnime);
+    animes.forEach(showAnime);
 }
 
 function showAnime(anime) {
@@ -36,25 +34,23 @@ function showAnime(anime) {
     // document.body.append(top50anime)
 } 
 
-
-    // When the user clicks on the button, open the modal
-    signIn.onclick = function() {
-        modal.style.display = "block";
-      }
+// When the user clicks on the button, open the modal
+signIn.onclick = function() {modal.style.display = "block";}
       
-      // When the user clicks on <span> (x), close the modal
-      closer.onclick = function() {
-        modal.style.display = "none";
-      }
+// When the user clicks on <span> (x), close the modal
+closer.onclick = function() {modal.style.display = "none";}
       
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
-      weapon 
+
+
+
+
 
 
 // fetch(top50AnimeURL)
