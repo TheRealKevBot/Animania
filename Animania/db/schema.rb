@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_03_213333) do
+ActiveRecord::Schema.define(version: 2020_12_07_221101) do
 
   create_table "favorites", force: :cascade do |t|
     t.string "name"
     t.integer "user_rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "mal_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -24,9 +25,10 @@ ActiveRecord::Schema.define(version: 2020_12_03_213333) do
     t.string "last_name"
     t.string "user_name"
     t.string "passphrase"
-    t.integer "favorite_id"
+    t.integer "favorite_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "eighteen_plus"
     t.index ["favorite_id"], name: "index_users_on_favorite_id"
   end
 

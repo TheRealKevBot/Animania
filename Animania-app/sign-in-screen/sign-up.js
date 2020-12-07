@@ -1,11 +1,11 @@
 const animesDropDown = document.querySelector('#favorite')
 
-fetch('http://localhost:3000/top50animesuser')
+fetch('http://localhost:3000/favorites')
     .then(response => response.json())
-    .then(animes => {
-        animes.forEach(anime => {
+    .then(favAnimes => {
+        favAnimes.forEach(favorite => {
             const option = document.createElement('option')
-            option.textContent = anime.title
+            option.textContent = favorite.name
             option.value = favorite.id
 
             animesDropDown.append(option)
