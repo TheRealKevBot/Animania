@@ -13,25 +13,30 @@
         <p>If you are new here please sign up for an account below. Once you sign up you will have your very own personal account where you can store all of your favorite anime under!</p>
         <p> 
             <form method="POST" action="http://localhost:3000/users">
-            <label for="first_name">First name:</label>
-            <input id='first_name' name='first_name' type="text" placeholder=" Here !">
+            <label for='first_name'>First name:</label>
+            <input id='first_name' name='first_name' type="text" placeholder="Here">
             
-            <label for="last_name">Last name:</label>
-            <input id='last_name' name='last_name' type="text" placeholder=" Here !">
+            <label for='last_name'>Last name:</label>
+            <input id='last_name' name='last_name' type="text" placeholder="Here">
             
-            <label for="user_name">Username:</label>
-            <input id='user_name' name='user_name' type="text" placeholder=" Here !">
+            <label for='user_name'>Username:</label>
+            <input id='user_name' name='user_name' type="text" placeholder="Here">
             
-            <label for="passphrase">Password:</label>
-            <input id='passphrase' name='passphrase' type="password" placeholder=" Here !">
+            <label for='passphrase'>Password:</label>
+            <input id='passphrase' name='passphrase' type="password" placeholder="Here">
 
-            <label for="age">+18?</label>
+            <label for='favorite'>Favorite Anime Ever!</label>
+            <select name='favorite_id' id='favorite'>
+
+            </select>
+
+            <label for='age'>+18?</label>
             <input type='checkbox' name="age">
             
             <input type="submit" value='Register'>
         </form>
         <p>
-            Made by Javaria Brascom and Kevin Glasgow
+            Made by Javaria Brascom & Kevin Glasgow
         </p>
     </body>
 </html> 
