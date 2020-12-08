@@ -38,6 +38,9 @@ function showAnime(anime) {
 function createAnimeCard (anime) { 
   const animeCard =  document.createElement('div');
   animeCard.classList.add("cardR");
+  animeCard.id = "sider"
+
+  animeCard.innerHTML =`<a href="#sider">Go to choice</a>`
 
   animeCard.addEventListener('click', () => {
     console.log('this is me', anime)
@@ -57,6 +60,7 @@ function createAnimeCard (anime) {
 
     const selectedAnimeSynop = document.querySelector('.side-bar2 > p')
     selectedAnimeSynop.innerHTML = `<a href='anime-info.html?id=${anime.mal_id}'>Learn More Here!</a>` 
+    
     
   })
   return animeCard;
@@ -115,6 +119,7 @@ function createAnimeSynop ({ synopsis }) {
 function parseJSON(response) {
   return response.json();
 }
+
 
 // fetch(top50AnimeURL)
 //     .then(response => response.json())

@@ -229,6 +229,7 @@ h2 {
     width: fit-content;
     margin-left: 8px;
     margin-bottom: 8px;
+   
 }
  
 
@@ -243,12 +244,17 @@ h2 {
     border-style: solid;
     border-color: #152339;
     text-align: center;
+    
 }
 .side-bar2 > h1 {
     text-decoration: underline;
 }
 
+.side-bar2 > img {}
 
+.cardR > a {
+    margin-top: 20px;
+}
 /* 
 .secondh { 
     text-align: left;
