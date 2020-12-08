@@ -5,27 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ANIMANIA Validation</title>
         <script defer src="sign-in.js"></script>
-        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="sign-in.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>ANIMANIA Login!</h1>
+        <div class="background">
+            <div class="box">
+                <h1>ANIMANIA Login!</h1>
         <!-- <div class="error-container">
             <p1 id="error1">You have entered an invalid Username and/or Password.</p1>
             <p2 id="error2">Please try again!</p2>
         </div> -->
+                <p>*If you are a new user please return to the main screen to select the "Anime Club" Icon*</p>
 
-        <form id="login-form" method="POST" action="http://localhost:3000/users">
+                <form id="login-form" class="log-in" method="POST" action="http://localhost:3000/users">
+           
+                    <div class="login-container">
+                        <input type="text" name="user_name" id="user_name" placeholder="Username" required>
+                        <input type="password" name="passphrase" id="passphrase" placeholder="Password" required>
+                        <input id="submit" type="submit" value="Login">
+                    </div>
+                </form>
 
-            <div class="login-container">
-                <input type="text" name="user_name" id="user_name" placeholder="Username" required>
-                <input type="password" name="passphrase" id="passphrase" placeholder="Password" required>
-                <input id="submit" type="submit" value="Login">
+                <div class="forgot-container">
+                    <span class="passphrase"><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">Forgot password?</a></span>
+                </div>
             </div>
-        </form>
-
-        <div class="forgot-container">
-            <span class="passphrase"><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">Forgot password?</a></span>
-        </div>
-
+            
     </body>
 </html>

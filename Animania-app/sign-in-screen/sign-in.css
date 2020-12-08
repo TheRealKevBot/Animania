@@ -1,0 +1,28 @@
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/lightHeros.jpg);
+    background-color: #bbbd;
+    background-size: cover;
+    background-position:  center;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(0);
+}
+.log-in{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box {
+    background-color: white;
+    max-width:850px;
+    margin-left: 400px;
+
+}
+
+body{ 
+    
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+}
+
