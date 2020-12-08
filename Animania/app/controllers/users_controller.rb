@@ -18,13 +18,11 @@ class UsersController < ApplicationController
             last_name: params[:last_name],
             user_name: params[:user_name],
             passphrase: params[:passphrase],
-            favorite_id: params[:favorite_id]
+            favorite_id: params[:favorite_id],
+            eighteen_plus: params[:eighteen_plus] ? true : false
         )
 
-        byebug
-
-        render json: @newUser
-        # redirect_to 'http://localhost:3001/'
+        redirect_to 'http://localhost:3001/'
     end 
     
 end

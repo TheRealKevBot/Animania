@@ -15,6 +15,8 @@ api_animes.each do |api_anime|
     puts api_anime['title']
     @newAnime = Favorite.create(
         name: api_anime['title'],
-        user_rating: api_anime['score']
+        user_rating: api_anime['score'],
+        mal_id: api_anime['mal_id']
     )
-end
+end 
+
