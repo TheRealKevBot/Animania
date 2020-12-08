@@ -46,12 +46,18 @@ function createAnimeCard (anime) {
     selecttedAnimeImage.src = anime.image_url;
     selecttedAnimeImage.alt = anime.name;
 
-    const selectedAnimeName = document.querySelector('.side-bar2 > h2')
+    const selectedAnimeName = document.querySelector('.side-bar2 > h1')
     selectedAnimeName.textContent= anime.title;
 
-    const selectedAnimeSynop = document.querySelector('.side-bar2 > p')
-    selectedAnimeSynop.textContent = anime.synopsis 
+    const selectedAnimeScore = document.querySelector('.side-bar2 > h2')
+    selectedAnimeScore.textContent= `Rating: ${anime.score}`;
 
+    const selectedAnimeMembers = document.querySelector('.side-bar2 > h3')
+    selectedAnimeMembers.textContent= `Members: ${anime.members}`;
+
+    const selectedAnimeSynop = document.querySelector('.side-bar2 > p')
+    selectedAnimeSynop.innerHTML = `<a href='anime-info.html?id=${anime.mal_id}'>Learn More Here!</a>` 
+    
   })
   return animeCard;
 } 
