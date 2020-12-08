@@ -3,11 +3,17 @@ body{
   text-align: center;
   font-family: 'JetBrains Mono', monospace;
 }
-
+h1{
+  text-shadow: 1px 1px 2px rgb(140, 134, 134), 0 0 1em blue, 0 0 0.2em darkblue;
+}
+.tops{
+  
+  font-size: 20px;
+}
 
 .bubbles img{
   width: 100px;
-  animation: bubble 7s linear infinite;
+  animation: bubble 5s linear infinite;
   background: transparent;
 }
 .bubbles{
@@ -16,7 +22,7 @@ body{
   align-items: center;
   justify-content: space-around;
   position: absolute;
-  bottom: -120px;
+  bottom: -250px;
 }
 
 @keyframes bubble{
@@ -38,18 +44,19 @@ body{
   }
 }
 .bubbles img:nth-child(1){
-  width: 25px;
-  animation-delay: 2s;
+    width: 200px;
+  animation-delay: 2.5s;
 }
 .bubbles img:nth-child(2){
   
   animation-delay: 1s;
 }
 .bubbles img:nth-child(3){
-  animation-delay: 3s;
+    width: 180px;
+  animation-delay: 2.s;
 }
 .bubbles img:nth-child(4){
-  animation-delay: 4.5s;
+  animation-delay: 3.5s;
 }
 .bubbles img:nth-child(6){
   animation-delay: 6s;
