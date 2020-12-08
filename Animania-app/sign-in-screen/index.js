@@ -1,16 +1,13 @@
 allAnimeRecentlyReleasedURL = 'https://api.jikan.moe/v3/search/anime?q=&page=1&genre=1,10&order_by=start_date&sort=desc';
 userURL = "http://localhost:3000/users"
-<<<<<<< HEAD
 const top50anime = document.querySelector('.background2')
 const sideCard = document.querySelector('side-bar2')
 
-=======
 top50AnimeURL = 'http://localhost:3000/top50animes'; 
 top50AnimeuserURL = 'http://localhost:3000/top50animesuser'; 
 animeURL = 'http://localhost:3000/animes'; 
->>>>>>> d306585e3f56a2598b068d4f5da77d86af1923d7
 
-const top50anime = document.querySelector('section')
+
 const signIn = document.getElementById('btn')
 const modal = document.getElementById('myModal')
 const closer = document.getElementsByClassName('close')[0]
@@ -28,16 +25,15 @@ function showAnime(anime) {
    const name = createAnimeName(anime);
    const ranking = createAnimeRanking(anime);
    const cover = createImage(anime);
-   const synop = createAnimeSynop(anime);
+   
 
     
-    animeCard.append(ranking, name, cover, synop)
+    animeCard.append(ranking, name, cover)
     top50anime.append(animeCard)
     // sideCard.append(synopsis)
     // document.body.append(top50anime)
 } 
 
-<<<<<<< HEAD
 function createAnimeCard (anime) { 
   const animeCard =  document.createElement('div');
   animeCard.classList.add("cardR");
@@ -49,7 +45,7 @@ function createAnimeCard (anime) {
     selecttedAnimeImage.src = anime.image_url;
     selecttedAnimeImage.alt = anime.name;
 
-    const selectedAnimeName = document.querySelector('.side-bar2 > h1')
+    const selectedAnimeName = document.querySelector('.side-bar2 > h2')
     selectedAnimeName.textContent= anime.title;
 
     const selectedAnimeSynop = document.querySelector('.side-bar2 > p')
@@ -109,7 +105,6 @@ function createAnimeSynop ({ synopsis }) {
      function  parseJSON(response) {
        return response.json();
      }
-=======
 fetch(userURL)
   .then(parseJSON)
   .then (accessUsers);
@@ -119,7 +114,6 @@ function  parseJSON(response) {
 }
 
 
->>>>>>> d306585e3f56a2598b068d4f5da77d86af1923d7
 
 
 // fetch(top50AnimeURL)
