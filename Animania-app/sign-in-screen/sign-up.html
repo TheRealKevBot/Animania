@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>! Sign Up !</title>
         <script defer src="sign-up.js"></script>
-        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="sign-up.css">
     </head>
     <body>
         <h1>ANIMANIA REGISTRATION</h1>
@@ -38,5 +38,24 @@
         <p>
             Made by Javaria Brascom & Kevin Glasgow
         </p>
+        <div class="bubbles">
+            <img src="images/symbol.png">
+            <img src="images/SAO.png">
+            <!-- <img src="images/bubble.png"> -->
+            <img src="images/TG.png">
+            <!-- <img src="images/bubble.png"> -->
+            <img src="images/NS.png">
+            <!-- <img src="images/bubble.png"> -->
+        </div>
+    </div>
+    <script src="./confetti.js-master/confetti.js"></script>
+    <script>
+        const Fallit=()=>{
+            setTimeout(function(){
+                confetti.start();
+            }, 1000)
+        }
+        Fallit();
+    </script>
     </body>
 </html> 

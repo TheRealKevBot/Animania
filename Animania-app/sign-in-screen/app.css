@@ -17,6 +17,7 @@
     background-position:  center;
     position: relative;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -31,6 +32,7 @@
     z-index: 90;
 
 }
+
 
 
 .modal-content {
@@ -109,12 +111,22 @@ h1 {
 
 .ph1 { 
     font-size: 80px;
-    margin: 10px 0 30px;
+    /* margin: 10px 0 30px; */
     line-height: 80px;
     color: rgb(103, 206, 230);
     z-index: 2;
     filter: none;
     text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    margin-left: 100px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #00acff75, 0 0 5px darkblue;
+}
+.sign-in{
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    color:rgb(103, 206, 230);
+    margin-left: 300px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #00acff75, 0 0 5px darkblue;
 }
 .side-bar {
     width: 50px;
@@ -152,58 +164,6 @@ h1 {
     bottom: 30px;
 }
 
-.bubbles img{
-    width: 70px;
-    animation: bubble 7s linear infinite;
-    background: transparent;
-}
-.bubbles{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 0;
-}
-
-@keyframes bubble{
-    0%{
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50%{
-       
-        opacity: 1;
-    }
-    70%{
-        
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-80vh);
-        opacity: 0;
-    }
-}
-.bubbles img:nth-child(1){
-    width: 25px;
-    animation-delay: 2s;
-}
-.bubbles img:nth-child(2){
-    
-    animation-delay: 1s;
-}
-.bubbles img:nth-child(3){
-    animation-delay: 3s;
-}
-.bubbles img:nth-child(4){
-    animation-delay: 4.5s;
-}
-.bubbles img:nth-child(6){
-    animation-delay: 6s;
-}
-.bubbles img:nth-child(7){
-    animation-delay: 7s;
-}
 
 
 h1 {
