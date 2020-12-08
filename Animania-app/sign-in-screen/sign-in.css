@@ -13,16 +13,19 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.box {
-    background-color: white;
-    max-width:850px;
-    margin-left: 400px;
 
+.box {
+    align-self: center;
+    /* background-color: white */
+    /* max-width:850px; */
+    /* margin-left: 400px; */
 }
 
-body{ 
-    
+body{
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
+    color: white;
+    text-shadow: 2px 2px 5px black, 2px 2px 5px black, 2px 2px 5px black;
+    
 }
 
