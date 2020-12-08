@@ -5,7 +5,7 @@ fetch(`https://api.jikan.moe/v3/anime/${mal_id}`)
     .then(response => response.json())
     .then(anime => {
         const animeName = document.querySelector('h1')
-        animeName.textContent = `Title: ${anime.title_english}`
+        animeName.textContent = anime.title_english
 
         const animeImg = document.querySelector('img')
         animeImg.src = anime.image_url
@@ -19,13 +19,13 @@ fetch(`https://api.jikan.moe/v3/anime/${mal_id}`)
         animeRank.textContent = `Ranked: # ${anime.rank}`
 
         const animeScore = document.querySelector('h3')
-        animeScore.textContent = ` Rated: ${anime.score} from ${anime.scored_by} Users`
+        animeScore.textContent = ` Rated: ${anime.score}/10 from ${anime.scored_by} users`
 
         const animeRating = document.querySelector('h4')
         animeRating.textContent = `Rating: ${anime.rating}`
 
         const animeEpisodes = document.querySelector('h5')
-        animeEpisodes.textContent = `Episodes: ${anime.episodes}, ${anime.duration}isode`
+        animeEpisodes.textContent = `Episodes: ${anime.episodes}, ${anime.duration}`
 
         const animeStatus = document.querySelector('h6')
         animeStatus.textContent = `Status: ${anime.status}`
