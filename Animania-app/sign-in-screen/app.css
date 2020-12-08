@@ -111,7 +111,7 @@ h1 {
     font-size: 80px;
     margin: 10px 0 30px;
     line-height: 80px;
-    color: rgb(73, 20, 123);
+    color: rgb(103, 206, 230);
     z-index: 2;
     filter: none;
     text-shadow: 2px 2px 4px #000000;
@@ -271,4 +271,3 @@ h1 {
     top: 70px; 
     margin: 3rem; */
 
-}

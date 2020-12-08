@@ -17,6 +17,7 @@ fetch(top50AnimeURL)
     .then(displayTop50);
 
 function displayTop50(animes) {
+  console.log(animes)
     animes.forEach(showAnime);
 }
 
@@ -81,29 +82,29 @@ function createAnimeSynop ({ synopsis }) {
   return synop
 }
 
-// When the user clicks on the button, open the modal
-signIn.onclick = function() {
-  modal.style.display = "block";
-}
+// // When the user clicks on the button, open the modal
+// signIn.onclick = function() {
+//   modal.style.display = "block";
+// }
   
-  // When the user clicks on <span> (x), close the modal
-closer.onclick = function() {
-  modal.style.display = "none";
-}
+//   // When the user clicks on <span> (x), close the modal
+// closer.onclick = function() {
+//   modal.style.display = "none";
+// }
   
-  // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+//   // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 
      function  parseJSON(response) {
        return response.json();
      }
-fetch(userURL)
-  .then(parseJSON)
-  .then (accessUsers);
+// fetch(userURL)
+//   .then(parseJSON)
+//   .then (accessUsers);
 
 function parseJSON(response) {
   return response.json();
