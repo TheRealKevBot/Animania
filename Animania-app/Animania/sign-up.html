@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>! Sign Up !</title>
+        <script defer src="sign-up.js"></script>
+        <link rel="stylesheet" href="sign-up.css">
+    </head>
+    <body>
+        <h1>ANIMANIA REGISTRATION</h1>
+        <h2>🌟 Welcome to the Club!! 🌟</h2> 
+        <div>
+        <p class="tops">If you are new here please sign up for an account below. Once you sign up you will have your very own personal account where you can store all of your favorite anime under!</p>
+        <p class="ques"> 
+            <form method="POST" action="http://localhost:3000/users">
+            <label for='first_name'>First name:</label>
+            <input id='first_name' name='first_name' type="text" placeholder="Here">
+            
+            <label for='last_name'>Last name:</label>
+            <input id='last_name' name='last_name' type="text" placeholder="Here">
+            
+            <label for='user_name'>Username:</label>
+            <input id='user_name' name='user_name' type="text" placeholder="Here">
+            
+            <label for='passphrase'>Password:</label>
+            <input id='passphrase' name='passphrase' type="password" placeholder="Here">
+
+            <label for='favorite'>Favorite Anime Ever!</label>
+            <select name='favorite_id' id='favorite'>
+
+            </select>
+
+            <label for='age'>+18?</label>
+            <input type='checkbox' id='age' name="eighteen_plus">
+            
+            <input type="submit" value='Register'>
+        </form>
+        </p>
+        </div>
+        <p class="cred">
+            Made by Javaria Brascom & Kevin Glasgow
+        </p>
+        <div class="bubbles">
+            <img src="images/inu.gif">
+            <img src="images/chop.gif">
+            <!-- <img src="images/bubble.png"> -->
+            <img src="images/download.gif">
+            <!-- <img src="images/bubble.png"> -->
+            <img src="images/naruto.gif ">
+            <!-- <img src="images/bubble.png"> -->
+        </div>
+    </div>
+    <script src="./confetti.js-master/confetti.js"></script>
+    <script>
+        const Fallit=()=>{
+            setTimeout(function(){
+                confetti.start();
+            }, 1000)
+        }
+        Fallit();
+    </script>
+    </body>
+</html> 
