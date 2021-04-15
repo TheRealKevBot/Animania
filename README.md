@@ -1,4 +1,4 @@
-# Animania
+ # Animania
 The Anime app for you! 
 
 This is an app where anime lovers can go to find information on their current favorites as well as find new ones thanks to our user's ratings!
@@ -27,4 +27,4 @@ We are constantly trying to improve our user's experience as well as building ou
 
 ## Contact
 [Linkedin](https://www.linkedin.com/in/javaria-brascom-0510991bb/)  Javaria Brascom <br />
-[Linkedin](https://www.linkedin.com/in/kevin-glasgow-21795154/)  Kevin Glasgow
+[LinkedIn](https://www.linkedin.com/in/kevin-glasgow-21795154/)  Kevin Glasgow
