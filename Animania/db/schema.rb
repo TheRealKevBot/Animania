@@ -32,4 +32,5 @@ ActiveRecord::Schema.define(version: 2020_12_07_221101) do
     t.index ["favorite_id"], name: "index_users_on_favorite_id"
   end
 
+  add_foreign_key "users", "favorites"
 end
