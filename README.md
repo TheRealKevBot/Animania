@@ -3,6 +3,8 @@ The Anime app for you!
 
 This is an app where anime lovers can go to find information on their current favorites as well as find new ones thanks to our user's ratings!
 
+[Demo Comming Soon]() 
+
 ## General Info
 This web based app allows users to sign-up and create an account with us. Our home page allows users to view the currently top 50 rated anime’s in descending order. Once an anime has been selected you will be show its current rating as well as how many members have favorited said show. In addition, you will be prompted if you would like to learn more about the current anime you are viewing. You will then be sent to that anime's page where you will find information such as its rank, user ratings, age rating, number of episodes and their length, airing status, a synopsis, as well as a trailer. 
 
